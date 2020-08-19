@@ -19,13 +19,13 @@ namespace MarketPlace.Data
             _connection = new SqlConnection(options.Value.DBConnectionString);
         }
 
-        public DataWrapper<GoodsDto> GetAccountById(long Id)
+        public DataWrapper<GoodsDto> GetAllGoods()
         {
             var result = new DataWrapper<GoodsDto>();
             try
             {
                 result.Data = _connection.Query<GoodsDto>(
-                    StoredProcedures.GoodsGetById, new { Id },
+                    StoredProcedures.GoodsGetAll,
                     commandType: CommandType.StoredProcedure).FirstOrDefault();
                 result.IsOk = true;
             }

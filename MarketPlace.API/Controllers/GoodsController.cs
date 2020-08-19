@@ -28,7 +28,7 @@ namespace MarketPlace.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public ActionResult<GoodsOutputModel> GetAllAppliances()
+        public ActionResult<GoodsOutputModel> GetAllGoods()
         {
             DataWrapper<GoodsDto> dataWrapper = _repo.GetAllGoods();
             return MakeResponse(dataWrapper, _mapper.Map<GoodsOutputModel>);
