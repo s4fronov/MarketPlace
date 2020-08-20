@@ -9,7 +9,7 @@ namespace MarketPlace.API.Configuration
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<StorageOptions>().As<IStorageOptions>();
-            builder.RegisterType<GoodsRepository>().As<IGoodsRepository>();
+            builder.RegisterType<ProductRepository>().As<IProductRepository>();
         }
     }
 }

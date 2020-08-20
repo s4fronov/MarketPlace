@@ -2,6 +2,6 @@
 {
     public static class StoredProcedures
     {
-        public const string GoodsGetAll = "Goods_GetAll";
+        public const string ProductsGetAll = "Products_GetAll";
     }
 }

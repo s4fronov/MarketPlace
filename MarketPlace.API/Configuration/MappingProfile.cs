@@ -8,7 +8,7 @@ namespace MarketPlace.API.Configuration
     {
         public MappingProfile()
         {
-            CreateMap<GoodsDto, GoodsOutputModel>();
+            CreateMap<ProductDto, ProductOutputModel>();
         }
     }
 }

@@ -10,22 +10,22 @@ using System.Linq;
 
 namespace MarketPlace.Data
 {
-    public class GoodsRepository : IGoodsRepository
+    public class ProductRepository : IProductRepository
     {
         private readonly IDbConnection _connection;
 
-        public GoodsRepository(IOptions<StorageOptions> options)
+        public ProductRepository(IOptions<StorageOptions> options)
         {
             _connection = new SqlConnection(options.Value.DBConnectionString);
         }
 
-        public DataWrapper<GoodsDto> GetAllGoods()
+        public DataWrapper<ProductDto> GetAllProducts()
         {
-            var result = new DataWrapper<GoodsDto>();
+            var result = new DataWrapper<ProductDto>();
             try
             {
-                result.Data = _connection.Query<GoodsDto>(
-                    StoredProcedures.GoodsGetAll,
+                result.Data = _connection.Query<ProductDto>(
+                    StoredProcedures.ProductsGetAll,
                     commandType: CommandType.StoredProcedure).FirstOrDefault();
                 result.IsOk = true;
             }

@@ -9,14 +9,14 @@ namespace MarketPlace.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class GoodsController : Controller
+    public class ProductController : Controller
     {        
-        private readonly ILogger<GoodsController> _logger;
-        private readonly IGoodsRepository _repo;
+        private readonly ILogger<ProductController> _logger;
+        private readonly IProductRepository _repo;
         private readonly IMapper _mapper;
         private delegate T DtoConverter<T, K>(K dto);
 
-        public GoodsController(ILogger<GoodsController> logger, IGoodsRepository repo, IMapper mapper)
+        public ProductController(ILogger<ProductController> logger, IProductRepository repo, IMapper mapper)
         {
             _logger = logger;
             _repo = repo;
@@ -28,10 +28,10 @@ namespace MarketPlace.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public ActionResult<GoodsOutputModel> GetAllGoods()
+        public ActionResult<ProductOutputModel> GetAllGoods()
         {
-            DataWrapper<GoodsDto> dataWrapper = _repo.GetAllGoods();
-            return MakeResponse(dataWrapper, _mapper.Map<GoodsOutputModel>);
+            DataWrapper<ProductDto> dataWrapper = _repo.GetAllProducts();
+            return MakeResponse(dataWrapper, _mapper.Map<ProductOutputModel>);
         }        
 
         private ActionResult<T> MakeResponse<T>(DataWrapper<T> dataWrapper)
