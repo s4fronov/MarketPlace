@@ -86,4 +86,7 @@
     <None Include="dbo\Migration\v1.1\DeletePropertyColumns.sql" />
     <None Include="dbo\Migration\v1.1\CreateCategoryTables.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment.sql" />
+  </ItemGroup>
 </Project>

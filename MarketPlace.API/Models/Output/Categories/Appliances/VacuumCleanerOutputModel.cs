@@ -1,6 +1,6 @@
 ﻿namespace MarketPlace.API.Models.Output
 {
-    public class VacuumCleanerOutputModel
+    public class VacuumCleanerOutputModel : ProductOutputModel
     {
         public decimal Volume { get; set; }
         public decimal Power { get; set; }

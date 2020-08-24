@@ -1,6 +1,6 @@
 ﻿namespace MarketPlace.API.Models.Output
 {
-    public class TelevisionOutputModel
+    public class TelevisionOutputModel : ProductOutputModel
     {
         public decimal Power { get; set; }
         public decimal MemorySize { get; set; }

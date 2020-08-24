@@ -1,6 +1,6 @@
 ﻿namespace MarketPlace.API.Models.Output
 {
-    public class MicrowaveOutputModel
+    public class MicrowaveOutputModel : ProductOutputModel
     {
         public decimal Volume { get; set; }
         public decimal Power { get; set; }

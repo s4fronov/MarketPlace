@@ -1,6 +1,6 @@
 ﻿namespace MarketPlace.API.Models.Output
 {
-    public class MonitorOutputModel
+    public class MonitorOutputModel : ProductOutputModel
     {
         public decimal Power { get; set; }
         public decimal ScreenDiagonal { get; set; }

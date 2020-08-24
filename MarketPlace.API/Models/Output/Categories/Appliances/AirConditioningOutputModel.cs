@@ -1,6 +1,6 @@
 ﻿namespace MarketPlace.API.Models.Output
 {
-    public class AirConditioningOutputModel
+    public class AirConditioningOutputModel : ProductOutputModel
     {
         public decimal Power { get; set; }
         public decimal MaxTemperature { get; set; }

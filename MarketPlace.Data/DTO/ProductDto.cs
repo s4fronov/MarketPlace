@@ -3,6 +3,7 @@
     public class ProductDto
     {
         public long? Id { get; set; }
+        public int? CategoryId { get; set; }
         public string Name { get; set; }
         public string Manufacturer { get; set; }
         public decimal Price { get; set; }

@@ -1,6 +1,6 @@
 ﻿namespace MarketPlace.API.Models.Output
 {
-    public class CameraOutputModel
+    public class CameraOutputModel : ProductOutputModel
     {
         public decimal BatteryCapacity { get; set; }
         public decimal MemorySize { get; set; }

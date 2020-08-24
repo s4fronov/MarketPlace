@@ -1,6 +1,6 @@
 ﻿namespace MarketPlace.API.Models.Output
 {
-    public class RefrigeratorOutputModel
+    public class RefrigeratorOutputModel : ProductOutputModel
     {
         public decimal Volume { get; set; }
         public decimal Power { get; set; }

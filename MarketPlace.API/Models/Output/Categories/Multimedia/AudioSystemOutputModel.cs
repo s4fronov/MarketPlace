@@ -1,6 +1,6 @@
 ﻿namespace MarketPlace.API.Models.Output
 {
-    public class AudioSystemOutputModel
+    public class AudioSystemOutputModel : ProductOutputModel
     {
         public decimal Power { get; set; }
         public decimal MemorySize { get; set; }

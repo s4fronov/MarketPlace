@@ -1,6 +1,6 @@
 ﻿namespace MarketPlace.API.Models.Output
 {
-    public class MulticookerOutputModel
+    public class MulticookerOutputModel : ProductOutputModel
     {
         public decimal Volume { get; set; }
         public decimal Power { get; set; }

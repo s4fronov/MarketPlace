@@ -10,6 +10,7 @@ namespace MarketPlace.API.Configuration
         {
             builder.RegisterType<StorageOptions>().As<IStorageOptions>();
             builder.RegisterType<ProductRepository>().As<IProductRepository>();
+            builder.RegisterType<OrderRepository>().As<IOrderRepository>();
         }
     }
 }
