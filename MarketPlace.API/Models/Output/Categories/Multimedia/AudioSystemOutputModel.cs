@@ -2,12 +2,12 @@
 {
     public class AudioSystemOutputModel
     {
-        public decimal? Power { get; set; }
-        public decimal? MemorySize { get; set; }
-        public byte? NumberOfModes { get; set; }
-        public bool? Jack { get; set; }
-        public bool? MiniJack { get; set; }
-        public bool? DiskDrivePresence { get; set; }
-        public bool? SmartHomeFunction { get; set; }
+        public decimal Power { get; set; }
+        public decimal MemorySize { get; set; }
+        public byte NumberOfModes { get; set; }
+        public bool Jack { get; set; }
+        public bool MiniJack { get; set; }
+        public bool DiskDrivePresence { get; set; }
+        public bool SmartHomeFunction { get; set; }
     }
 }

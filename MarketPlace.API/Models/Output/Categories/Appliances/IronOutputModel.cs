@@ -2,6 +2,7 @@
 {
     public class IronOutputModel
     {
+        public decimal Volume { get; set; }
         public decimal Power { get; set; }
         public decimal MaxTemperature { get; set; }
         public byte NumberOfModes { get; set; }
