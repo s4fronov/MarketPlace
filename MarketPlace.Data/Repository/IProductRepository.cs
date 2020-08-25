@@ -10,6 +10,6 @@ namespace MarketPlace.Data
         DataWrapper<ProductDto> GetProductById(int id);
         //DataWrapper<List<ProductDto>> GetProductsByCategoryId(byte categoryId);
         DataWrapper<ProductDto> UpdatePriceByProductId(int Id, decimal? price);
-        DataWrapper<int> GetInfoAboutProductByName(string model);
+        DataWrapper<int> GetProductByName(string model);
     }
 }

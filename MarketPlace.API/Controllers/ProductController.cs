@@ -17,7 +17,7 @@ namespace MarketPlace.Controllers
         private readonly IMapper _mapper;
         private delegate T DtoConverter<T, K>(K dto);
 
-        public ProductController(ILogger<ProductController> logger, IProductRepository repo, IMapper mapper)
+        public ProductController(IProductRepository repo, IMapper mapper)
         {
             _repo = repo;
             _mapper = mapper;

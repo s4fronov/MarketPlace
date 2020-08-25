@@ -6,6 +6,6 @@ namespace MarketPlace.Data
     {
         DataWrapper<OrderDto> CreateOrder(OrderDto orderDto);
         void AddProductsInOrder(ProductsInOrderDto products);
-        DataWrapper<OrderDto> GetProductsInOrderByOrderId(long id);
+        DataWrapper<OrderDto> GetOrderById(long id);
     }
 }
