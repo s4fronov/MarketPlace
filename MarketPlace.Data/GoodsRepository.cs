@@ -35,5 +35,10 @@ namespace MarketPlace.Data
             }
             return result;
         }
+
+        public DataWrapper<GoodsDto> GetAllGoods()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
